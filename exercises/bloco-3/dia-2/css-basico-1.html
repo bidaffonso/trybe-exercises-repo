@@ -5,38 +5,58 @@
     <title>HTML</title>
     <style>
 
-        #corpo {
+        body {
             background-color: lightskyblue;
+            font-size: 16px;
         }
         
         h1 {
             font-size: 65px;
-            color: orange;    
+            font-family: sans-serif;
+            color: orange;
+            text-decoration: underline;
+                
         }
 
-        ul {
+        p {
+            font-weight: 600;
+            font-size: 3em;
+            text-align: center;
             background-color: aqua;
         }
 
-        .favorite-color {
-            background-color: rgb(11, 66, 70);
+        ul {
+            
+            font-style: italic;
+            line-height: 50px;
+
         }
 
+        #color1{
+            background-color: yellow;
+        }
+
+        #color2{
+            background-color: red;
+        }
+
+        #color3{
+            background-color: brown;
+        }
+      
     </style>
   </head>
-  <body id="corpo">
+  <body>
+    
     <h1>Exercícios 3.2</h1>
+    
     <p class="favorite-color">Qual é a sua cor favorita?</p>
+    
     <ul class="favorite-color">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="color1">Amarelo</li>
+      <li id="color2">Vermelho</li>
+      <li id="color3">Marrom</li>
     </ul>
-    <!-- Exercícios
- - Modifique o tamanho do h1 para 65 pixels
- - Modifique a cor do texto do h1 para laranja
- - Modifique a cor de fundo da lista não ordenada
- - Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo
-    -->
+   
   </body>
 </html>
