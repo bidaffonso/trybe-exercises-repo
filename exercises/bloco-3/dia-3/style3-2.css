@@ -1,3 +1,16 @@
+div{
+    padding: 1px;
+}
+
 div:hover{
-    border: solid black;
+    border: 1px solid black;
+    
+    
+}
+
+div h3{
+    background-color: blue;
+    margin: 40px;
+    color: auto;
+    
 }
