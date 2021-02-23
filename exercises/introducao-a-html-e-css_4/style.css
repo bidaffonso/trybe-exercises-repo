@@ -1,0 +1,63 @@
+body{
+    font-family: sans-serif;
+}
+
+img {
+    width: 400px;
+    float: left;
+    margin: 30px;
+    margin-left: 10px;
+}
+
+
+header,h1, h2{
+    text-align: center;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 3px;
+}
+nav{
+    background-color: aqua;
+    padding: 1px;
+    margin: 0;
+    
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    
+}
+
+.info {
+    list-style: none;
+    padding: 0;
+}
+
+.infos-gerais{
+    /* width: 10px; */
+    font-size: smaller;
+    display: table;
+    /* float: right; */
+    clear: right;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 8px;
+    border: solid black;
+    height: 100%;
+}
+
+li{
+   margin: 10px;
+}
+
+section {
+    display: inline-block;
+}
+
+footer{
+    background-color: aqua;
+    margin: 0;
+    padding: 3px;
+}
