@@ -64,3 +64,63 @@ if (ang1 + ang2 + ang3 == 180) {
 }else {
     console.log("false");
 }
+
+//6)
+
+let pieceName = "peao";
+
+switch (pieceName.toLowerCase()) {
+    case "rei":
+        console.log("Todas as direções, somente uma casa.");
+        break;
+    
+    case "rainha":
+        console.log("Todas as direções.");
+        break;
+    
+    case "bispo":
+        console.log("Em diagonais.");
+        break;
+
+    case "cavalo":
+        console.log("Em 'L', em dois por três.");
+        break;
+    
+    case "torre":
+        console.log("Em retas, nas linhas e colunas.");
+        break;
+
+    case "peão":
+        console.log("Pra frente comendo nas diagonais.");
+        break;
+
+    default:
+        console.log("Essa peça não existe.");
+
+}
+
+//7)
+
+let nota = 100;
+
+if (nota >= 90 && nota <= 100) {
+    console.log("A");
+}else if (nota >=80 && nota < 100) {
+    console.log("B");
+}else if (nota >=70 && nota < 100) {
+    console.log("C");
+}else if (nota >=60 && nota < 100) {
+    console.log("D");
+}else if (nota >=50 && nota < 100) {
+    console.log("E");
+}else if (nota < 50 && nota >= 0) {
+    console.log("F");
+}else {
+    console.log("Erro!");
+}
+
+//8)
+
+
+
+
