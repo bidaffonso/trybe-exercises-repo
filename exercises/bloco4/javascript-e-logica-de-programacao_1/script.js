@@ -1,6 +1,6 @@
 //1)
 
-let a = 4;
+let a = 3;
 let b = 7;
 
 //adicao
@@ -33,7 +33,7 @@ if (a > b) {
 
 //3)
 
-let c = 0;
+let c = 5;
 
 if (a > b && a > c) {
     console.log(a);
@@ -120,6 +120,40 @@ if (nota >= 90 && nota <= 100) {
 }
 
 //8)
+
+let n1 = 2;
+let n2 = 1;
+let n3 = 4;
+
+if ((n1 % 2 == 0) || (n2 % 2 == 0) || (n3 % 2 == 0)) {
+    console.log("true");
+}else{
+    console.log("false");
+}
+
+//9)
+
+if ((n1 % 2 != 0) || (n2 % 2 != 0) || (n3 % 2 != 0)) {
+    console.log("true");
+}else{
+    console.log("false");
+}
+
+//10)
+
+let valorCusto = 10;
+let valorVenda = 20;
+let custoTotal = valorCusto + valorCusto * 0.20;
+
+if (custoTotal > 0 && valorVenda > 0) {
+    let custo = custoTotal * 1000;
+    let venda = valorVenda * 1000;
+    console.log("Lucro: ", venda - custo);
+}else {
+    console.log("Erro!");
+}
+
+// let total = custo + custo * 0.20;
 
 
 
