@@ -17,3 +17,13 @@ console.log(indexOfPortfolio);
 menu.push("Contato");
 
 console.log(menu);
+
+//1) -----Estrutura for
+
+let groceryList = ["Arroz", "Feijão", "Alface", "Melancia"];
+
+console.log("Lista de compras! ")
+
+for (let i = 0; i < groceryList.length; i++) {
+    console.log(groceryList[i]);
+}
