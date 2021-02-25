@@ -220,9 +220,6 @@ switch (true) {
 
         }
 
-
-
-
         break;
 
     default:
