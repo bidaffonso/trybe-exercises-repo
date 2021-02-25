@@ -153,7 +153,93 @@ if (custoTotal > 0 && valorVenda > 0) {
     console.log("Erro!");
 }
 
-// let total = custo + custo * 0.20;
+//11)
+
+let salario = 6000;
+
+
+switch (true) {
+    case (salario <= 1556.94):
+        
+        salario = salario - salario * 0.08;
+        console.log("O salário liquido é: ", salario);
+        break;
+    
+    case (salario > 1556.94 && salario <= 2594.92):
+        
+        salario = salario - salario * 0.09;
+        console.log("O salario após dedução do inss é: ", salario);
+        
+        if (salario <= 1903.98) {
+            
+            console.log("O salário liquido é: ", salario);
+        
+        }else {
+            
+            let ir;
+            ir = salario * 0.075 - 142.80;
+            salario = salario - ir;
+            console.log("O salário liquido é: ", salario);
+        
+        }
+        break;
+
+
+    case (salario > 2594.92 && salario <= 5189.82):
+        
+        salario = salario - salario * 0.11;
+        console.log("O salario após dedução do inss é: ", salario);
+
+        if (salario <= 2826.65) {
+            
+            let ir;
+            ir = salario * 0.075 - 142.80;
+            salario = salario - ir;
+            console.log("O salário liquido é: ", salario);
+        
+        }else if (salario > 2826.65 && salario <= 3751.05) {
+            
+            let ir;
+            ir = salario * 0.15 - 354.80;
+            salario = salario - ir;
+            console.log("O salário liquido é: ", salario);
+
+        }else if (salario > 3751.05 && salario <= 4664.68) {
+            
+            let ir;
+            ir = salario * 0.225 - 636.13;
+            salario = salario - ir;
+            console.log("O salário liquido é: ", salario);
+            
+        }else {
+            
+            let ir;
+            ir = salario * 0.275 - 869.36;
+            salario = salario - ir;
+            console.log("O salário liquido é: ", salario);
+
+        }
+
+
+
+
+        break;
+
+    default:
+        
+        salario = salario - 570.88;
+        console.log("O salario após dedução do inss é: ", salario);
+
+        let ir;
+        ir = salario * 0.275 - 869.36;
+        salario = salario - ir;
+        console.log("O salário liquido é: ", salario);
+
+
+}
+
+
+
 
 
 
