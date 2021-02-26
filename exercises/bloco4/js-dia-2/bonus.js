@@ -17,7 +17,7 @@
 
 // console.log(array);
 
-//1)
+// 1)
 
 // let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
@@ -56,16 +56,24 @@
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let newNumbers = [];
+let index1 = 1
+let index2 = 0
 
-for (let index1 = 1; index1 < numbers.length; index1 += 1) {
-    for (let index2 = 0; index2 < index1; index2 += 1) {
+for (index1; index1 < numbers.length; index1 += 1) {
+    
+    for (index2; index2 < index1; index2 += 1) {
+        
         if (index1 < numbers.length) {
-            newNumbers.push(numbers[index2] * numbers[index1]);
-        } else {
-            newNumbers.push(numbers[index2] * 2);
+            let aux = (numbers[index2] * numbers[index1]);
+            newNumbers.push(aux);
         }
+        
     }
+   
 }
+
+let aux = numbers[index2] * 2;
+newNumbers.push(aux);
 
 console.log(newNumbers);
 
