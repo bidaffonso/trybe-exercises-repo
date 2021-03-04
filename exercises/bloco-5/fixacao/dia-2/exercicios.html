@@ -93,10 +93,10 @@
       for (let index = 1; index <= 10; index += 1){
         listItems.push(index);
       }
-      for (let index = 0; index < listItems.length; index += 1){
+      for (let index in listItems){
         let iList = document.createElement('li');
         iList.innerHTML = listItems[index];
-        divR.appendChild(iList);    
+        uList.appendChild(iList);    
       }
       //9
       let newH1 = document.createElement('h3');
@@ -105,7 +105,22 @@
       div.appendChild(newH1);
       div.appendChild(newH2);
       div.appendChild(newH3);
-      
+      //Parte 2
+      //1
+      h1.className = 'title';
+      //2
+      newH1.className = 'description';
+      newH2.className = 'description';
+      newH3.className = 'description';
+      //3
+      div.removeChild(divL);
+      //4
+      divR.style.marginRight = 'auto';
+      //5
+      div.style.backgroundColor = 'cyan';
+      //6
+      uList.lastChild.remove();
+      uList.lastChild.remove();
     </script>
   </body>
 </html>
