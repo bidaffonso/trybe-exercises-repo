@@ -21,7 +21,7 @@ function createDays() {
     dayListItem.innerHTML = days;
 
     if( dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31) {
-      dayListItem.className = 'day holiday';
+      dayListItem.className = 'day holiday'; 
     }
 
     weekDaysList.appendChild(dayListItem);
