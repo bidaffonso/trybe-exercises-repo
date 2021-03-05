@@ -17,16 +17,30 @@ function createDays() {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     const days = dezDaysList[index];
     const dayListItem = document.createElement('li');
-    dayListItem.className = 'day';
     dayListItem.innerHTML = days;
 
-    if( dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31) {
+    if( dezDaysList[index] === 24 || dezDaysList[index] === 31) {
       dayListItem.className = 'day holiday'; 
+    } else if( dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18) {
+      dayListItem.className = 'day friday'; 
+    } else if (dezDaysList[index] === 25) {
+      dayListItem.className = 'day holiday friday';
+    } else {
+      dayListItem.className = 'day';
     }
 
     weekDaysList.appendChild(dayListItem);
   };
 }
 
+function createButton(buttonName) {
+  let button = document.createElement('button');
+  button.id = 'btn-holiday';
+  button.innerHTML = buttonName;
+  let ulButton = document.querySelector('.buttons-container');
+  ulButton.appendChild(button);
+}
+
 createDaysOfTheWeek();
 createDays();
+createButton('Feriados');
