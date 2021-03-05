@@ -33,14 +33,42 @@ function createDays() {
   };
 }
 
+let button = document.createElement('button');
+
 function createButton(buttonName) {
-  let button = document.createElement('button');
+ 
   button.id = 'btn-holiday';
   button.innerHTML = buttonName;
   let ulButton = document.querySelector('.buttons-container');
   ulButton.appendChild(button);
 }
 
+let button2 = document.createElement('button');
+
+function createButton2(buttonName) {
+ 
+  button2.id = 'btn-friday';
+  button2.innerHTML = buttonName;
+  let ulButton = document.querySelector('.buttons-container');
+  ulButton.appendChild(button2);
+}
+
+function holidayColor() {
+  let button = document.querySelector('#btn-holiday');
+  let holiday = document.querySelectorAll('.day');
+  for (let index in holiday) {
+    if (holiday[index].className == 'holiday' || holiday[index].className == 'day holiday' || holiday[index].className == 'day holiday friday'){
+      if (holiday[index].style.backgroundColor != 'yellow'){
+        holiday[index].style.backgroundColor = 'yellow';
+      } else {
+        holiday[index].style.backgroundColor = 'rgb(238,238,238)';
+      }
+    }
+  }
+}
+
+button.addEventListener('click', holidayColor);
 createDaysOfTheWeek();
 createDays();
 createButton('Feriados');
+createButton2('Sexta-feira');
