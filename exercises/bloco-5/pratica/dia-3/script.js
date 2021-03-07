@@ -107,9 +107,48 @@ function newTasks(task) {
   let newTask = document.createElement('span');
   newTask.innerHTML = task;
   myTasks.appendChild(newTask);
-  
 }
 
+//8
+function addDivTask(color) {
+  let myTasks = document.querySelector('.my-tasks');
+  let divTask = document.createElement('div');
+  divTask.className = 'task';
+  divTask.style.backgroundColor = color;
+  myTasks.appendChild(divTask);
+}
+
+//9
+function classTask() {
+  let task = document.querySelector('.task');
+  task.addEventListener('click', taskClass);
+  function taskClass() {
+    
+    if (task.className === 'task') {
+      task.className = 'task selected';
+    } else {
+      task.className = 'task';
+    }
+  }    
+}
+
+//10
+function colorDayTask() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+  
+  days.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+}
 
 button.addEventListener('click', holidayColor);
 button2.addEventListener('click', fridayMod);
@@ -119,4 +158,7 @@ createButton('Feriados');
 createButton2('Sexta-feira');
 zoomOut();
 zoomIn();
-newTasks('cozinhar');
+newTasks('Cozinhar');
+addDivTask('red');
+classTask();
+colorDayTask();
