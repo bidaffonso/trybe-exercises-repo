@@ -1,4 +1,13 @@
+
 input[type="text"] {
   width: 60%;
   display: block;
+}
+
+#content label{
+  display: block;
+}
+
+.dados-gerais {
+  border: 1px solid black;
 }
