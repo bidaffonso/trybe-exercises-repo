@@ -1,6 +1,8 @@
+
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -109,6 +111,10 @@ footer p {
     font-size: 35px;
   }
 
+  nav ul li {
+    font-size: 20px;
+  }
+
   .aside-one h2 {
     font-size: 25px;
     margin-left: 30px;
@@ -123,6 +129,14 @@ footer p {
     color: aliceblue;
     line-height: 35px;
     list-style: square;
+    font-size: 20px;
+  }
+
+  .main-content p {
+    font-size: 20px;
+    max-width: 95%;
+    margin: 10%;
+    line-height: 25px;
   }
 
   footer {
@@ -132,7 +146,57 @@ footer p {
   footer p {
     font-size: 15px;
     color: aliceblue;
-    margin: 30px;
+    margin: 10px 30px;
   }
 
+}
+
+@media screen and (min-width: 1000px) {
+  header p {
+    font-size: 50px;
+    height: 120px;
+  }
+  nav ul li {
+    font-size: 25px;
+    margin: 0 40px;
+  }
+
+  .aside-one h2 {
+    font-size: 35px;
+  }
+
+  .aside-one ul li {
+    color: aliceblue;
+    line-height: 45px;
+    list-style: square;
+    font-size: 25px;
+    margin-left: 30px;
+  }
+
+  .aside-two h2 {
+    font-size: 22px;
+  }
+
+  .aside-two ul li {
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  h1 {
+    padding: 5%;
+    font-size: 35px;
+  }
+
+  .main-content p {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  footer h3 {
+    font-size: 22px;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
 }
