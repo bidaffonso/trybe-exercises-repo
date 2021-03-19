@@ -17,3 +17,35 @@ img {
 figure {
     margin: 20px;
 }
+
+@media screen and (min-width: 1100px) {
+  body {
+    background-color: darkcyan;
+    font-size: 30px;
+    margin: 35px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media screen and (min-width: 1548px) {
+  body {
+    background-color: darkseagreen;
+    font-size: 35px;
+    margin: 45px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+}
