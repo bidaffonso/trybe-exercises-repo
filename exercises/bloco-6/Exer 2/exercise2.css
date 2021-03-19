@@ -40,6 +40,10 @@ nav ul li {
   color: dodgerblue;
 }
 
+.aside-one ul {
+  padding: 10px;
+}
+
 .aside-one ul li {
   color: aliceblue;
   line-height: 25px;
@@ -47,7 +51,7 @@ nav ul li {
 }
 
 .aside-two h2 {
-  font-size: 15px;
+  font-size: 18px;
   margin: 15px;
   padding-top: 10px;
   text-align: center;
@@ -62,7 +66,73 @@ nav ul li {
 }
 
 .aside-two ul li {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 25px;
   list-style: none;
+}
+
+h1 {
+  padding: 10%;
+  font-size: 25px;
+  text-align: center;
+  background-color: lightpink;
+  color: dodgerblue;
+}
+
+.main-content p {
+  max-width: 95%;
+  margin: 5%;
+  line-height: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: lightpink;
+}
+
+footer h3 {
+  font-size: 18px;
+  color: dodgerblue;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 15px;
+  color: aliceblue;
+  margin: 10px;
+}
+
+@media screen and (min-width: 730px) {
+  header p {
+    font-size: 35px;
+  }
+
+  .aside-one h2 {
+    font-size: 25px;
+    margin-left: 30px;
+    padding-top: 30px;
+  }
+
+  .aside-one ul {
+    padding: 30px;
+  }
+  
+  .aside-one ul li {
+    color: aliceblue;
+    line-height: 35px;
+    list-style: square;
+  }
+
+  footer {
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 15px;
+    color: aliceblue;
+    margin: 30px;
+  }
+
 }
