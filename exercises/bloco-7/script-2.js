@@ -5,17 +5,10 @@ const customer1 = {
 };
 
 const newKey = (obj, key, val) => {
-
   obj[key] = val;
   return obj;
-  // const customer = customer1;
-  // let newKey = key;
-  // const value = val;
-  
-  // customer1[newKey] = value;
-  // return customer1;
 }
 
 
 
-console.log(newKey(customer1, 'lastName', 'Ferreira'));
+console.table(newKey(customer1, 'lastName', 'Ferreira'));
