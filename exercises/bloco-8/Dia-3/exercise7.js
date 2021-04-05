@@ -63,18 +63,13 @@ const books = [
   },
 ];
 
-const expectedResult = [
-  'Frank Herbert',
-  'George R. R. Martin',
-  'Isaac Asimov',
-  'J. R. R. Tolkien',
-];
+const expectedResult = 'O Senhor dos Anéis';
 
-function fantasyOrScienceFictionAuthors() {
+function authorWith3DotsOnName() {
   // escreva seu código aqui
-  return books.filter((book) => (
-    book.genre === 'Ficção Científica' || book.genre === 'Fantasia'
-  )).map((book) => book.author.name).sort();
+  return books.find((book) => (
+    book.author.name.split(' ').filter((namePart) => namePart.endsWith('.')).length === 3
+  )).name;
 }
 
-assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
