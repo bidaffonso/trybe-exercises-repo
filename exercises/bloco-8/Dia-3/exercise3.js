@@ -114,3 +114,4 @@ function fantasyOrScienceFiction() {
 }
 
 assert.deepStrictEqual(fantasyOrScienceFiction(), expectedResult);
+console.log(fantasyOrScienceFiction());
