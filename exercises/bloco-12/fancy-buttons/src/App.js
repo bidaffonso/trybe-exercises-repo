@@ -1,27 +1,34 @@
 import React, { Component } from 'react';
 import './App.css';
+import Form from './components/Form';
 
 
 class App extends Component {
   constructor(props) {
-    super()
-    this.handleClick = this.handleClick.bind(this);
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
     this.state = {
-      clickCount: 0
+      opcao: '',
+      email: '',
+      password: '',
+      descricao: '',
+      checkbox: 'false',
     }
   }
 
-  handleClick() {
-    this.setState((oldState, _props) => ({
-      clickCount: oldState.clickCount + 1
-    }))
+  handleChange({ target }) {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    this.setState({
+      [name]: value,
+    })
   }
 
   render() {
       return (
-        <div className="App">
-          <button onClick={this.handleClick}>{ this.state.clickCount }</button>
-        </div>
+        <section className="App-header">
+          <Form handleChange={ this.handleChange } />
+        </section>
       );
       
   }
