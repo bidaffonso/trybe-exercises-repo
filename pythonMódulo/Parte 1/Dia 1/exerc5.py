@@ -1,0 +1,1 @@
+COBERTURA_TINTA = 
