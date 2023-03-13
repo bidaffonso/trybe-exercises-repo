@@ -47,7 +47,7 @@ class BaralhoIterator(Iterator):
 class BaralhoInversoIterator(Iterator):
     def __init__(self, cartas):
         self.cartas = cartas
-        self._pos = 0
+        self._pos = 51
 
     def __next__(self):
         try:
@@ -58,9 +58,11 @@ class BaralhoInversoIterator(Iterator):
             self._pos -= 1
             return carta
         
-#baralho_novo = Baralho()
-#for card in baralho_novo:
-    #print(card)
+baralho_novo = Baralho()
+for card in baralho_novo:
+    print(card)
+
+print("///////////////////////////////////////////////////////////////////////////////////")
 
 baralho_inverso_novo = BaralhoInverso()
 for card in baralho_inverso_novo:
